@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K V S Rohit | iWN Lab | vkanthe [at] ncsu [dot] edu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0;
+      background-color: #f5f5f5; /* Grey sides */
+      color: #000000;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .content-wrapper {
+      background-color: #ffffff; /* Main content background */
+      margin: 0 auto;
+      padding: 1.5rem 2rem; /* Add gap on sides */
+      max-width: 900px;
+    }
+    .topbar {
+      background-color: #cc0000;
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+    .topbar img {
+      max-width: 220px;
+      height: auto;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    .header-top h1 {
+      font-size: 2.4rem;
+      margin: 0.5rem 0;
+      font-weight: 700;
+      color: #222;
+      letter-spacing: 1px;
+    }
+    nav {
+      position: relative;
+      display: inline-block;
+    }
+    .hamburger {
+      background: none;
+      border: none;
+      font-size: 28px;
+      cursor: pointer;
+      color: #333;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f9f9f9;
+      min-width: 180px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-size: 0.95rem;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    nav:hover .dropdown-content {
+      display: block;
+    }
+    .profile {
+      display: flex;
+      align-items: stretch;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      padding: 1rem 0;
+    }
+    .profile img {
+      width: 160px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .profile-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+    .profile-info h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0 0 0.5rem 0;
+      color: #444;
+    }
+    .profile-info p {
+      margin: 0.3rem 0;
+    }
+    .contact-line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .icons {
+      display: flex;
+      gap: 0.5rem;
+      margin-left: 1rem;
+    }
+    .icons a img {
+      width: 32px; /* Slightly increased size */
+      height: 32px;
+    }
+    main h2 {
+      font-size: 1.6rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3rem;
+      margin-top: 2rem;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: #555;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+      }
+      .profile img {
+        width: 150px;
+      }
+      .header-top h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .profile-info h2 {
+        text-align: center;
+      }
+      .contact-line {
+        flex-direction: column;
+        align-items: center;
+      }
+      .icons {
+        margin-top: 0.5rem;
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <img src="ncstate-logo-red.png" alt="NC State University Logo">
+  </div>
+
+  <div class="content-wrapper">
+    <header>
+      <div class="header-top">
+        <h1>K V S Rohit</h1>
+        <nav>
+          <button class="hamburger">&#9776;</button>
+          <div class="dropdown-content">
+            <a href="publications.html">Publications</a>
+			<a href="services.html">Services</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="profile">
+      <img src="profile_picture.jpg" alt="K V S Rohit's Photo">
+      <div class="profile-info">
+        <div>
+          <h2>Ph.D. Candidate | Intelligent Wireless Networking Lab</h2>
+          <p>I am a Graduate Research Assistant in the Intelligent Wireless Networking (iWN) lab, led by <a href="https://slin23.github.io/" target="_blank">Prof. Shih-Chun Lin</a>.</p>
+          <div class="contact-line">
+            <div>
+              <p>Email: vkanthe [at] ncsu [dot] edu</p>
+              <p>Phone: (984) 484-4994</p>
+            </div>
+            <div class="icons">
+              <a href="https://scholar.google.com/citations?user=1rNwKrwAAAAJ&hl=en" target="_blank"><img src="Google_Scholar_logo.svg" alt="Google Scholar"></a>
+              <a href="https://linkedin.com/in/rohitkvs" target="_blank"><img src="linkedin_logo.png" alt="LinkedIn"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <h2>About Me</h2>
+      <p>My research involves building proof-of-concept hardware testbeds focused on signal detection and processing in spatially distributed systems for beyond 5G systems, in close collaboration with industry partners. This work has direct applications in satellite swarm communications, tactical communications, and commercial distributed systems. I implemented these solutions on USRP SDRs with over-the-air data transfers. We have published several papers on these topics so far, which use different versions of USRPs, with primary focus on X310 and B210 deployments. We have a few conferences and journals underway in these topics. I am currently working on extending my testbeds towards building distributed transceiver operations for beamforming and geolocation,  with an aim to build capabilities suitable for integrated sensing and communication frameworks.</p>
+      
+      <p>In the past, I also implemented some automatic modulation classification and deep-learning-based LDPC channel coding on USRP deployments.</p>
+
+      <p>In addition to research, I have actively contributed to teaching. I served as a teaching assistant for the following courses at NC State University:</p>
+      <ul>
+        <li><strong>ECE 570: Computer Networks</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
+        <li><strong>ECE 572: Optimization and Algorithms</strong> (2022–2025) with Prof. Shih-Chun Lin</li>
+        <li><strong>ECE 301: Signals and Systems</strong> (2021) with Prof. Robert Heath</li>
+      </ul>
+
+      <p>Prior to joining NC State, I worked as a Junior Research Fellow at IIT Roorkee in 2019 on a smart grid project titled <em>D-SIDES</em>. I also served as a part-time Senior Research Fellow at NIT Rourkela in 2020, where I helped develop an Android application as part of a COVID-19 emergency response system.</p>
+
+      <p>Before my academic career, I worked as a Technology Manager at Atria Convergence Technologies Pvt. Ltd., one of India’s leading internet service providers.</p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Venkata Srirama Rohit Kantheti | NC State University</p>
+    </footer>
+  </div>
+</body>
+</html>
