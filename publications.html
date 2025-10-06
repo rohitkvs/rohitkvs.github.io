@@ -106,6 +106,12 @@
       text-align: center;
       padding: 1rem 0;
     }
+	@media (max-width: 768px) {
+		.header-top h1 {
+		font-size: 1.6rem;
+		text-align: center;
+		}
+	}
   </style>
 </head>
 <body>
@@ -117,9 +123,9 @@
     <header>
       <div class="header-top">
         <h1>Publications</h1>
-        <nav>
-          <button class="hamburger">&#9776;</button>
-          <div class="dropdown-content">
+        <nav id="dropdown">
+          <button class="hamburger" id="menu-icon">&#9776;</button>
+          <div class="dropdown-content" id="dropdown-content">
             <a href="index.html">Home</a>
 			<a href="services.html">Services</a>
           </div>
@@ -158,5 +164,29 @@
       <p>&copy; 2025 Venkata Srirama Rohit Kantheti | NC State University</p>
     </footer>
   </div>
+  
+  <script>
+	const menuIcon = document.getElementById('menu-icon');
+	const dropdown = document.getElementById('dropdown');
+	const dropdownContent = document.getElementById('dropdown-content');
+
+
+	// Toggle menu on click
+	menuIcon.addEventListener('click', () => {
+	dropdown.classList.toggle('active');
+	dropdownContent.style.display = dropdown.classList.contains('active') ? 'block' : 'none';
+	});
+
+
+	// Keep hover working
+	dropdown.addEventListener('mouseenter', () => {
+	dropdownContent.style.display = 'block';
+	});
+	dropdown.addEventListener('mouseleave', () => {
+	if (!dropdown.classList.contains('active')) {
+	dropdownContent.style.display = 'none';
+	}
+	});
+</script>
 </body>
 </html>
